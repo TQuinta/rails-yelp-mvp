@@ -1,0 +1,9 @@
+<h1>Edit your restaurant here</h1>
+
+<%= render "form", restaurant: @restaurant %>
+
+<p><%= link_to "Return to all restaurants", restaurants_path %></p>
+<p><%= link_to "Delete",
+       restaurant_path(@restaurant),
+       method: :delete,
+       data: { confirm: "Are you sure?" } %></p>
